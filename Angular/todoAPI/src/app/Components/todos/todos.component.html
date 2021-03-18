@@ -1,0 +1,27 @@
+<div>
+here is my title: {{title}}
+
+<br>
+{{metodeNavn()}}
+<button (click)="metodeNavn2()" >my button</button>
+
+<ul *ngFor="let item of todos">
+<li>{{item.title}}</li>
+<p *ngIf="item.completed">completed og title: {{item.completed}} og {{item.title}}</p>
+</ul>
+
+{{1 + 1}}
+{{100 |currency}}
+
+
+</div>
+
+<!-- Kalder et partial view fra en anden component, altså html koden deri -->
+<app-todo-item></app-todo-item>
+
+<!-- Itererer igennem en property fra en anden component fil. -->
+<app-todo-item *ngFor="let item of todos" [todoFromTodos]=item>
+
+
+</app-todo-item>
+
