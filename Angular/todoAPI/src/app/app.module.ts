@@ -7,13 +7,15 @@ import { TodosComponent } from './Components/todos/todos.component';
 import { TodoItemComponent } from './Components/todo-item/todo-item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GenreComponent } from './Components/genre/genre.component';
+import { SideNavComponent } from './Components/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
     TodoItemComponent,
-    GenreComponent
+    GenreComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
