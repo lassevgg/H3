@@ -161,8 +161,4 @@ putSeatReserved(updateSeatReservedData: SeatReserved):Observable<SeatReserved>{
 //#endregion
 
 
-
-
-
-
 }
