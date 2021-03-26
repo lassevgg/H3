@@ -1,0 +1,14 @@
+<div>
+  <button (click)="getSeatsSpecificAuditorium(3)">See seats in auditorium 3</button>
+
+  <span *ngIf="this.seatList.length > 0">
+    <strong>Auditorium 3</strong>
+    <br>
+
+    <ul *ngFor="let seat of seatList">
+      <li>Number: {{seat.number}}</li>
+      <li>Row: {{seat.row}}</li>
+    </ul>
+  </span>
+
+</div>

@@ -1,7 +1,13 @@
 <div [ngClass]="setClasses()">
+
   <input (change)="toggle(todoFromTodos)" type="checkbox">
+
   <p>todo-item works!</p>
+
   todo from parent {{todoFromTodos.id}}
+
   <button (click)="deleteTodo(todoFromTodos)" class="btn">x</button>
+
   <a href=""><img src="url" alt=""></a>
+
 </div>

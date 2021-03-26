@@ -136,6 +136,9 @@ putScreening(updateScreeningData: Screening):Observable<Screening>{
 getSeatList():Observable<Seat[]>{
   return this.http.get<Seat[]>(this.urlAPISeat);}
 
+getSeatsOnAuditorimId(auditoriumId: number):Observable<Seat[]>{
+  return this.http.get<Seat[]>(this.urlAPISeat + "/ListSeatsOnAuditoriumId/" + auditoriumId);}
+
 postSeat(newSeatData: Seat):Observable<Seat>{
   return this.http.post<Seat>(this.urlAPISeat, newSeatData, httpOptions);}
 
